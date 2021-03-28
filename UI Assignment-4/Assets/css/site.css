@@ -1,0 +1,43 @@
+.container1 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container ul li a:hover{
+ text-decoration-line: underline;
+}
+
+.jumbotron-button-color{
+    color:white;
+}
+.h1-font{
+    font-family: "serif";
+    font-weight: 300;
+}
+
+.jumbotron-margin{
+    margin-top:30px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.text-size{
+    font-size: larger;
+    font-weight:bold;
+}
+.increase-font{
+    font-size: 40px;
+    margin-bottom: 2px;
+}
+.page{
+    border-radius: 2rem;
+}
+
+.blog-footer{
+    text-align: center;
+    width:100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
