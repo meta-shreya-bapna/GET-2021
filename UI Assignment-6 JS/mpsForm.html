@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>METACUBE PARKING SYSTEM</title>
+        <link rel="stylesheet" type="text/css" href="css/mpsForm.css" />
+    </head>
+    <body>
+
+      <!-- Navigation bar to go directly to a particular section -->
+        <ul>
+            <li><a href="#addempl">Add Employee</a></li>
+            <li><a href="#addveh">Add Vehicle</a></li>
+            <li><a href="#feedback">Give Feedback</a></li>
+            <li ><a href="#price">Pricing</a></li>
+          </ul>
+        <img src="image1.jpg" alt="Campus Parking Area" height=630px/>
+
+        <!-- In NEW EMPLOYEE section user can add a new employee -->
+        <div class="collapsible" ><h2 id="addempl">NEW EMPLOYEE</h2></div>
+        <div class="container"  >
+            
+            <form autocomplete="on">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" placeholder="Enter your first name" required/><br/>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" placeholder="Enter your last name" required/><br/>
+                Gender  <input type="radio" name="gender" value="male" /> Male 
+                <input type="radio" name="gender" value="female" /> Female 
+                <input type="radio" name="gender" value="others" /> Others <br>
+                <label for="mail">E-mail id</label>
+                <input type="email" id="mail" placeholder="Enter your email id" required/><br/>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" required/><br/>
+                <label for="password">Confirm Password</label>
+                <input type="password" id="confirm_password" placeholder="Confirm Password" required/><br/>
+                <label for="contact_no">Contact No.</label>
+                <input type="tel" id="contact_no" pattern="[0-9]{10}" required/><br/>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- In NEW VEHICLE section user can add a new vehicle of an employee -->
+        <div class="collapsible" ><h2 id="addveh">NEW VEHICLE</h2></div>
+        <div class="container"  style="display:block" >
+            
+            <form autocomplete="on">
+                <label for="vehicle_make">Vehicle Make</label>
+                <input type="text" id="vehicle_make" placeholder="Enter the company name" required/><br/>
+                <label for="vehicle_model">Vehicle Model</label>
+                <input type="text" id="vehicle_model" placeholder="Add model number" required/><br/>
+                <label for="vehicle_type">Vehicle Type</label>
+                <input type="text" id="vehicle_type" placeholder="Enter type of vehicle" required/><br/>
+                <label for="vehicle_no">Vehicle No.</label>
+                <input type="text" id="vehicle_no" placeholder="Enter vehicle no." required/><br/>
+                <label for="emp_id">Employee id</label>
+                <input type="text" id="emp_id" placeholder="Employee Id Please!" required/><br/>
+                <label for="identify">Identification</label>
+                <textarea class="identify" placeholder="Write here"></textarea> </br></br>
+                <input type="submit" value="Add Vehicle" >
+            </form>
+        </div>
+
+        <img src="image2.png" alt="Vehicle" height=500px class="image"/>
+
+        <!-- This section contains feedback form: where user can give feedback about parking system-->
+        <div class="feedback"><h2>FEED BACK FORM</h2></div>
+        <div class="container1" id="feedback">    
+          <form>    
+            <div class="row">    
+              <div class="col-25">    
+                <label for="fname">First Name</label>    
+              </div>    
+              <div class="col-75">    
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>    
+              </div>    
+            </div> 
+
+            <div class="row">    
+              <div class="col-25">    
+                <label for="lname">Last Name</label>    
+              </div>    
+              <div class="col-75">    
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>    
+              </div>    
+            </div>    
+            
+            <div class="row">    
+                <div class="col-25">    
+                  <label for="email">E-mail Id</label>    
+                </div>    
+                <div class="col-75">    
+                  <input type="email" id="email" name="mailid" placeholder="Your mail id.." required>    
+                </div>    
+              </div>    
+            
+              <div class="row">    
+              <div class="col-25">    
+                <label for="country">Country</label>    
+              </div>    
+              <div class="col-75">    
+                <select id="country" name="country" required>    
+                    <option value="none">Select Country</option>    
+                  <option value="australia">Australia</option>    
+                  <option value="canada">Canada</option>    
+                  <option value="usa">USA</option>    
+                  <option value="russia">Russia</option>    
+                  <option value="japan">Japan</option>    
+                  <option value="india">India</option>    
+                  <option value="china">China</option>    
+                </select>    
+              </div>    
+            </div>    
+            
+            <div class="row">    
+              <div class="col-25">    
+                <label for="feed_back">Feed Back</label>    
+              </div>    
+              <div class="col-75">    
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+              </div>    
+            </div>    
+            <div class="row">    
+              <input type="submit" value="Submit">    
+            </div>    
+          
+          </form>    
+        </div>   
+        
+        <!-- This section helps user to choose conveyance acc. to price -->
+        <h1 id="price" style="margin:40 0 0 40;"><bold> Pricing Section</bold></h1>
+        <div class="contain">
+          <div class="sections">
+          <h4 style="padding-left: 20px;">CYCLE</h4>
+          <div class="circle">
+            <div class="circle-txt"><h3>$100</h3> /month</div>
+          </div>
+          <div>
+            <div>$5 Daily</div>
+            <div>$100 Monthly</div>
+            <div>$500 Yearly</div>
+        </div>
+        <div> <button>Purchase Now</button> </div>
+      </div>
+    
+        <div>
+          <div class="sections">
+          <h4 style="padding-left: 20px;">MOTOR CYCLE</h4>
+          <div class="circle">
+            <div class="circle-txt"><h3>$100</h3> /month</div>
+          </div>
+          <div>
+            <div>$10 Daily</div>
+            <div>$200 Monthly</div>
+            <div>$1000 Yearly</div>
+        </div>
+        <div> <button>Purchase Now</button> </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="sections">
+      <h4 style="padding-left: 20px;">FOUR WHEELERS</h4>
+      <div class="circle">
+        <div class="circle-txt"><h3>$100</h3> /month</div>
+      </div>
+      <div>
+        <div>$20 Daily</div>
+        <div>$500 Monthly</div>
+        <div>$3500 Yearly</div>
+    </div>
+    <div> <button>Purchase Now</button> </div>
+    </div>
+  </div>
+  </div>
+       
+       
+       
+       
+       <!-- <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+          
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+          </script> -->
+          <script src="mpsForm.js"></script>
+        
+    </body>
+</html>
